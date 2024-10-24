@@ -12,38 +12,41 @@
         android:id="@+id/pregunta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:text="¿Usas Google Crhomre?"
         android:textSize="30dp"
-        android:padding="25dp"
-        android:gravity="center_horizontal">
+        android:padding="25dp">
 
     </TextView>
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:gravity="center"
+            android:orientation="horizontal"
             android:padding="10dp">
         <Button
+            android:id="@+id/btnsi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SI"
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
-            android:onClick="onClickBtnSi"/>
+            android:onClick="onClickBtn"/>
         <Button
+            android:id="@+id/btnno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="NO"
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
-            android:onClick="onClickBtnNo"/>
+            android:onClick="onClickBtn"/>
         <Button
+            android:id="@+id/btnaveces"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="A VECES"
             android:layout_weight="1"
-            android:onClick="onClickBtnAveces"/>
+            android:onClick="onClickBtn"/>
     </LinearLayout>
 
     <TextView
